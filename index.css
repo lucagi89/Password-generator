@@ -1,6 +1,12 @@
+
+html{
+    max-width: 620px;
+    min-width: 620px;
+}
+
 body {
     margin: 8px;
-    height:350px;
+    height:400px;
     border-radius: 20px;
     text-align: center;
     border: solid white;
