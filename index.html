@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Sono&family=Wallpoet&display=swap" rel="stylesheet">
     <title>Password Generator</title>
     <link rel="stylesheet" href="index.css"
 
@@ -11,11 +14,18 @@
     <body>
         <h1>Generate your next <span>PASSWORD</span></h1>
         <h2>An easy way to generate infinite passwords</h2>
-        <button onclick="generate()">GENERATE PASSWORD</button>
+        <h3>CHOOSE THE NUMBER OF CHARACTERS:</h3>
+        <div>
+            <button id="length-el" onclick="fiveGen()">5</button>
+            <button id="length-el" onclick="tenGen()">10</button>
+            <button id="length-el" onclick="fifteenGen()">15</button>
+        </div>
+        <button id="length-el" class="generate" onclick="generate()">GENERATE PASSWORD</button>
         <div id="passwords">
             <p id = "pass1-el"></p>
             <p id = "pass2-el"></p>
         </div>
         <script src="index.js"></script>
     </body>
+    <footer>© 2022 Luca Gi, Inc.</footer>
 </html>
